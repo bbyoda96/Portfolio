@@ -89,7 +89,8 @@ html {
 .home_container{
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 100%px;
+
 }
 
 .home_container iframe{
