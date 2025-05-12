@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(250, 250, 250);
+
+}
+/*To make sure fixed header doesn't cut off the header of other pages such as skills, about me, etc*/
+html {
+    scroll-padding-top: 85px; /* header height */
+    font-family: monospace;
+
+}
+
+
+
+/* index.html/home.html*/
+.home{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 0 25px;
+}
+
+.top-nav{
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.right-nav {
+    float: right;
+    padding: 5px 30px 0 0;
+}
+
+.right-nav a{
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    font-size: 25px;
+}
+
+.footer{
+    padding: 0 40px  20px;
+    display: flex;
+    gap: 480px;
+}
+
+.by{
+    font-family: monospace;
+    text-align: center;
+    display: inline-block; /* make p behave like inline element */
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: #f3f3f3;
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.gmail{
+    font-family: monospace;
+    text-align: center;
+    display: inline-block; /* make p behave like inline element */
+    font-size: 25px;
+    padding: 5px 15px;
+    height: 50px;
+    background: #f3f3f3;
+    border: 1px solid black;
+    box-shadow: -15px -12px 0px 0px rgba(104, 0, 26, 0.993);
+
+}
+
+.comment{
+    font-family: monospace;
+    text-align: center;
+    display: inline-block; /* make p behave like inline element */
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 250px;
+    height: 40px;
+    background: #f3f3f3;
+    border: 1px solid black;
+}
+
+.home_container{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.home_container iframe{
+    border: none;
+    width: 100%;
+    height: 800px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    padding: 60px 0 0 ;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {/*will be used by all divs*/
+    visibility: hidden;
+}
+
+.text{
+    padding: 0 0 0 90px;
+}
+.text .p1{
+    font-family: monospace;
+    font-size: 80px;
+    text-align: justify;
+}
+
+.text .p2{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text .uow{
+    font-family: monospace;
+    text-decoration: underline;
+    color: black;
+}
+
+.text .uow:visited{
+    color: black;
+}
+
+img{
+    width: 500px;
+    height: 600px;
+    float: left;
+}
+
+
+
+/* work_training.html*/
+.work_header{
+    float: left;
+    border: 1px solid black;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 25px;
+    font-family: monospace;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.work_header.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work_text{
+    padding: 0 30px;
+
+}
+.right-nav-work {
+    float: right;
+    padding: 5px 30px 0 0;
+}
+
+.right-nav-work p{
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.work_container{
+    display: flex;
+    align-items: center;
+    padding: 150px 100px;
+    width: 100%;
+    gap: 150px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.work_container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card__content .fyp{
+    color: black;
+    
+}
+
+.card__content .fypmb{
+    color: black;
+    
+}
+
+/* CARD */
+/* From Uiverse.io by 0xnihilism */ 
+.card {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background: #fff;
+    border: 4px solid rgba(104, 0, 26, 0.993);
+    box-shadow: 12px 12px 0 #000;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card span{
+    font-family: monospace;
+}
+
+.card p{
+    font-family: monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 17px 17px 0 rgba(104, 0, 26, 0.993);
+}
+  
+.card__title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__content {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 20px;
+}
+  
+@keyframes glitch {
+    0% {
+      transform: translate(2px, 2px);
+    }
+    25% {
+      transform: translate(-2px, -2px);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+    }
+    75% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(2px, 2px);
+    }
+}
+  
+.glitch {
+    animation: glitch 0.3s infinite;
+}
+  
+
+/* skills.html*/
+.skills_header{
+    float: left;
+    border: 1px solid black;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 25px;
+    font-family: monospace;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.skills_header.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills_text{
+    padding: 0 30px;
+
+}
+
+.skills_container{
+    display: flex;
+    margin: auto;
+    width: 75%;
+    padding: 150px 0 0 400px;
+    float: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.skills_container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p.technical{
+    font-size: 25px;
+}
+
+p.lang{
+    font-size: 25px;
+}
+
+p.nontechnical{
+    font-size: 25px;
+}
+
+.skills_box {
+    /*padding:  0 0 0 350px;*/
+    display: flex; /* Keep items on one line */
+    flex-wrap: wrap; /* Optional: wrap if they overflow */
+    gap: 20px; /* spacing between words */
+}
+
+.skills_content{
+    float: right;
+    padding-left: 300px;
+}
+
+.skills_content2{
+    float: right;
+    padding-left: 400px;
+}
+
+.skills_content3{
+    float: right;
+    padding-left: 250px;
+}
+
+.skills_box p {
+    text-align: center;
+    display: inline-block; /* make p behave like inline element */
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: #f3f3f3;
+    border: 1px solid black;
+  }
+
+.right-nav-skills {
+    float: right;
+    padding: 5px 30px 0 0;
+}
+
+.right-nav-skills p{
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/*about.html*/
+.about_header{
+    float: left;
+    border: 1px solid black;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 25px;
+    font-family: monospace;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out; 
+}
+
+.about_header.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about_container{
+    align-items: center;
+    padding: 130px 150px;
+    width: 100%;
+    
+}
+
+.div1 .text_1{
+    font-family: monospace;
+    font-size: 19px;
+    width: 400px;
+}
+
+.polaroid{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.div1{
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.div1.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.div1 img{
+    width: 250px;
+    height: 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+.div2{
+    display: flex;
+    padding: 100px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.div2 .text_2{
+    font-family: monospace;
+    font-size: 19px;
+    width: 600px;
+}
+
+.div2{
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 80px;
+}
+
+.div2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
+.div2 img{
+    width: 250px;
+    height: 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+
+.about_text{
+    padding: 0 30px;
+}
+
+.right-nav-about {
+    float: right;
+    padding: 5px 30px 0 0;
+}
+
+.right-nav-about p{
+    text-decoration: none;
+    padding: 0 15px;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+}
