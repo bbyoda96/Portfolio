@@ -744,5 +744,17 @@ img {
     
 }
 
+/*fix height for each iframes*/
+#home{
+    height: 100vh;
+}
+
+#skills{
+    height: 80vh;;
+}
+
+#about{
+    height: 360vh;
+}
 
 }
