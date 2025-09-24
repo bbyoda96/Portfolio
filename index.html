@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="top-nav">
+    <a class="home" href="#home">Home</a>
+    <div class="right-nav">
+      <a href="#skills">Skills</a>
+      <a href="#work">Work/Training</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="container hidden">
+      <div class="image">
+        <img src="misc/line_art.png" alt="My picture">
+      </div>
+      <div class="text">
+        <p class="p1">park yumin</p>
+        <br><br>
+        <p class="p2">a cybersecurity graduate from the 
+          <a class="uow" href="https://www.uow.edu.au/study/courses/bachelor-of-computer-science/?major=43632" target="_blank">University of Wollongong</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="skills_header hidden">
+      <b class="skills_text">Skills</b>
+      <div class="right-nav-skills"><p>in order of relevance / proficiency</p></div>
+    </div>
+
+    <div class="outer_skills_cont">
+      <div class="skills_container hidden">
+        <p class="technical"><b>Technical</b></p>
+        <div class="skills_content">
+          <div id="tech_hidden" class="content_hidden" style="display:none;"> Python SQL HTML MySQL Kali-Linux</div>
+          <div id="output_tech" class="skills_box"></div>
+        </div>
+      </div>
+      <div class="skills_container hidden">
+        <p class="lang"><b>Languages</b></p>
+        <div class="skills_content2">
+          <div id="lang_hidden" class="content_hidden" style="display:none;">English Korean</div>
+          <div class="skills_box" id="output_lang"></div>
+        </div>
+      </div>
+      <div class="skills_container hidden">
+        <p class="nontechnical"><b>Non-technical</b></p>
+        <div class="skills_content3">
+          <div id="nontech_hidden" class="content_hidden" style="display:none;">Communication Teamwork Problem-solving</div>
+          <div class="skills_box" id="output_nontech"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="work_header hidden">
+      <b class="work_text">Work/Trainings</b>
+      <div class="right-nav-work"><p>Certificates / Courses / Work</p></div>
+    </div>
+    <div class="work_container hidden">
+      <a href="https://coursera.org/verify/professional-cert/UXV3D6ZS5D2N" target="blank">
+        <div class="card">
+          <p class="card__content">September 2024</p>
+          <p>------------------------------------------</p>
+          <span class="card__title">Coursera's Google Cybersecurity Certificate</span>
+        </div>
+      </a>
+      <div class="card">
+        <p class="card__content">March 2025 (975/990)</p>
+        <p>-------------------------</p>
+        <span class="card__title">TOEIC</span>
+      </div>
+      <div class="card">
+        <p class="card__content">August 2023 - May 2025</p>
+        <p>-------------------------</p>
+        <span class="card__title">Military Service</span>
+      </div>
+      <div class="card">
+        <p class="card__content">
+          Research <br> 
+          <a href="https://github.com/Thanatisia/CSIT321-FYP-MobileApp" style="text-decoration: underline;" class="fypmb" target="_blank"><b>Final Year Project (Mobile App)</b></a><br>
+          <a href="https://github.com/Thanatisia/CSIT321-FYP" style="text-decoration: underline;" class="fyp" target="_blank"><b>Final Year Project (Website)</b></a><br>
+          Miscellaneous
+        </p>
+        <p>--------------------------</p>
+        <span class="card__title">GITHUB</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about_header hidden">
+      <b class="about_text">About</b>
+      <div class="right-nav-about"><p>a little tmi about me :)</p></div>
+    </div>
+    <div class="about_container">
+      <div class="div1 hidden">
+        <img src="misc/pic_with_friend.jpg" alt="picture with a friend">
+        <img src="misc/pic_with_friend2.jpg" alt="picture with a friend2">
+        <img src="misc/pic_with_friend3.jpg" alt="picture with a friend3">
+        <div class="text_1">Born in South Korea, raised in Indonesia and went to university in Singapore, I have a passion for music, sports, technologies and deserts! My two go-to music genres are ballad when I'm relaxed and rap when I'm in the gym. I'm also a Red Devil, proud Manchester United fan since I was 9 (of course my favorite player is Ji Sung Park)</div>
+        <img src="misc/polaroid.png" alt="gyeongbokgoong picture">
+      </div>
+      <div class="div2 hidden">
+        <img src="misc/man_united.png" alt="manchester united">
+        <div class="text_2">In my free time, I enjoy listening to music, going to karaoke and gym (back is my favorite day!) and read articles about the latest cyber attacks and newly found exploits and vulnerabilities</div>
+        <img src="misc/desert.jpg" alt="desert">
+        <img src="misc/desert_2.jpg" alt="desert2">
+      </div>
+    </div>
+  </section>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
