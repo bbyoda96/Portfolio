@@ -163,7 +163,23 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+}
+
+.friends_pic_div, .desert_pic_div{
+    display: flex;
+    gap:10px;
+}
+
+.friends_pic_div img{
+    max-width: 120px;
+    height: auto;
+}
+
+.text_1, .text_2{
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .div1 img, .div2 img {
