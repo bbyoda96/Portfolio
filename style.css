@@ -23,7 +23,7 @@ body {
     z-index: 1000;
 }
 
-.home {
+.home, .work_text, .about_text, .skills_text {
     font-size: 30px;
     text-decoration: none;
     color: black;
@@ -167,7 +167,6 @@ img {
 }
 
 
-
 .friends_pic_div img{
     max-width: 120px;
     height: auto;
@@ -175,8 +174,12 @@ img {
 
 .text_1, .text_2{
     flex: 1;
-    font-size: 18px;
-    line-height: 2;
+    max-width: 400px;       /* keeps text blocks narrow on desktops */
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 .div1 img, .div2 img {
