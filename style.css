@@ -249,13 +249,13 @@ img {
 
 /*--Adjust Responsiveness for Home page line_art pic--*/
 @media (max-width: 768px) {
-    .container .image img {
+    .image{
         transform: translateY(-20px);
     }
 }
 
 @media (max-width: 480px) {
-    .container .image img {
+    .image{
         transform: translateY(-10px);
     }
 }
