@@ -207,6 +207,11 @@ img {
 
 /* Responsiveness */
 @media (max-width: 1024px) {
+
+    .top-nav .home{
+        text-align: center;
+    }
+
     .container, .skills_container, .work_container, .about_container,
     .div1, .div2 {
         flex-direction: column;
@@ -227,4 +232,150 @@ img {
     .p1 { font-size: 36px; }
     .p2, .skills_box p, .by, .comment { font-size: 14px; }
     .card { width: 100%; }
+}
+
+/* Tablet adjustments  for about page*/
+@media (max-width: 1024px) {
+    .text_1, .text_2 {
+        max-width: 300px;   /* slightly smaller on tablets */
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .top-nav .home {
+        font-size: 26px;
+        padding: 10px 0;
+    }
+
+    .right-nav, .right-nav-skills, .right-nav-work, .right-nav-about {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .right-nav a,
+    .right-nav-skills p,
+    .right-nav-work p,
+    .right-nav-about p {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 18px;
+    }
+
+    /* Containers */
+    .container,
+    .skills_container,
+    .work_container,
+    .about_container,
+    .div1,
+    .div2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Home Section */
+    .p1 { font-size: 50px; }
+    .p2 { font-size: 18px; }
+
+    /* Work Section */
+    .work_container {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Skills Section */
+    .skills_box {
+        justify-content: center;
+    }
+
+    .skills_box p {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    /* About Section */
+    .text_1, .text_2 {
+        max-width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .div1 img, .div2 img {
+        max-width: 180px;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .top-nav {
+        padding: 10px 0;
+    }
+
+    .home, .right-nav a {
+        display: block;
+        padding: 8px 0;
+        font-size: 20px;
+    }
+
+    /* Home */
+    .p1 { font-size: 36px; }
+    .p2 { font-size: 16px; }
+
+    /* Work Section */
+    .work_container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* Skills Section */
+    .skills_container {
+        padding: 30px 10px;
+    }
+
+    .skills_box p {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    /* About Section */
+    .about_container {
+        width: 95%;
+    }
+
+    .text_1, .text_2 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .div1 img, .div2 img {
+        max-width: 150px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
