@@ -33,7 +33,7 @@ body {
 
 .right-nav, .right-nav-skills, .right-nav-work, .right-nav-about {
     float: right;
-    padding: 5px 30px 0 0;
+    padding: 0 15px;
 }
 
 .right-nav a,
@@ -102,11 +102,14 @@ img {
 
 /* Work/Training */
 .work_header, .skills_header, .about_header {
-    float: left;
+    display: flex;
+    justify-content: space-between; /* left and right alignment */
+    align-items: center;            /* vertical centering */
     border: 1px solid black;
-    padding: 10px 0;
+    padding: 10px 20px;
     width: 100%;
     font-size: 25px;
+    box-sizing: border-box;
 }
 
 .work_container {
@@ -146,6 +149,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+/* Skills, About, Work text alignment*/
+.skills_text, .work_text, .about_text{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 0 25px;
 }
 
 .skills_box p {
