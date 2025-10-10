@@ -24,6 +24,7 @@ body {
 }
 
 .home, .work_text, .about_text, .skills_text {
+    text-align: center;
     font-size: 30px;
     text-decoration: none;
     color: black;
@@ -72,6 +73,10 @@ body {
 /* Home */
 .text {
     padding-left: 90px;
+}
+
+.image{
+    transform: translateY(-200px);
 }
 
 .text .p1 {
@@ -257,7 +262,7 @@ img {
         padding: 10px 0;
     }
 
-    .right-nav, .right-nav-skills, .right-nav-work, .right-nav-about {
+    .right-nav, .right-nav-skills, .right-nav-work, .right-nav-about, .skills_text, .work_text, .about_text{
         float: none;
         text-align: center;
         padding: 10px 0;
