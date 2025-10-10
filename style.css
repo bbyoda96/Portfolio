@@ -247,6 +247,21 @@ img {
     }
 }
 
+/*--Adjust Responsiveness for Home page line_art pic--*/
+@media (max-width: 768px) {
+    .container .image img {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .container .image img {
+        transform: translateY(-10px);
+    }
+}
+/*-----------------------------------------------------*/
+
+
 @media (max-width: 1024px) {
 
     /* Navbar */
