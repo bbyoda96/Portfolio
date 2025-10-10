@@ -23,7 +23,7 @@ body {
     z-index: 1000;
 }
 
-.home, .work_text, .about_text, .skills_text {
+.home{
     text-align: center;
     font-size: 30px;
     text-decoration: none;
